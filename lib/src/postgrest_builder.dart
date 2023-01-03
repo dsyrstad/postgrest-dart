@@ -57,6 +57,12 @@ class PostgrestBuilder<T, S> implements Future<T> {
     _options = options;
   }
 
+  /// Allows headers to be viewed and modified. Postgrest requires certain headers
+  /// to perform certain operations, such as `Prefer: tx=rollback`. The `insert()` method
+  /// clears the `Prefer` header, for example, which makes it impossible to set these
+  /// types of headers when the client is constructed.
+  Headers get headers => _headers;
+
   /// Converts any response that comes from the server into a type-safe response.
   ///
   /// ```dart
