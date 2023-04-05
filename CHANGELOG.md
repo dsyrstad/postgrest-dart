@@ -1,3 +1,13 @@
+## [1.2.3]
+
+- fix: deprecate `auth()`, use `setAuth()` instead [#107](https://github.com/supabase/postgrest-dart/pull/107)
+- fix: requests don't affect client's headers [#107](https://github.com/supabase/postgrest-dart/pull/107)
+
+## [1.2.2]
+
+- fix: deprecate `returning` parameter of `.delete()` [#105](https://github.com/supabase/postgrest-dart/pull/105)
+- chore: improve comment docs [#105](https://github.com/supabase/postgrest-dart/pull/105)
+
 ## [1.2.1]
 
 - fix: remove the breaking change that was introduced in v1.2.0 [#103](https://github.com/supabase/postgrest-dart/pull/103)
